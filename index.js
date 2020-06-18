@@ -105,6 +105,10 @@ drive(distance){
 
 const car1 = new Car('truck', 15);
 
+console.log(car1.tank);
+console.log(car1.odometer);
+
+
 car1.fill(20);
 console.log(car1.tank);
 car1.drive(600);
@@ -180,7 +184,7 @@ console.log(anInstructor.speak());
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
 class Student extends Lambdasian{
-  constructor(name, age, location, previousBackground, className, favSubjects){
+  constructor(name, age, location, previousBackground, className, favSubjects,){
     super(name, age, location)
     this.previousBackground = previousBackground;
     this.className = className;
@@ -209,7 +213,7 @@ console.log(student1.speak());
         + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
 */
 class ProjectManager extends Instructor{
-constructor(name, age, location, specialty, favLanguage, catchPhrase, gradClassName, favInstructor, channel){
+constructor(name, age, location, specialty, favLanguage, catchPhrase, gradClassName, favInstructor,){
   super(name, age, location, specialty, favLanguage, catchPhrase)
 this.gradClassName = gradClassName;
 this.favInstructor = favInstructor;
